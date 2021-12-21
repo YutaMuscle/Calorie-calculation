@@ -23,14 +23,10 @@ function calorieCalculation() {
             const weight = document.getElementById('weight').value;
 
             burnCalorie = burnCalc(gender, active, height, weight, age);
-            // console.log(burnCalorie);
             burnCalorie = Math.trunc(burnCalorie);
-            // console.log(burnCalorie);
 
             dietCalorie = dietCalc(burnCalorie);
-            // console.log(dietCalorie);
             dietCalorie = Math.trunc(dietCalorie);
-            // console.log(dietCalorie);
 
             burn = document.getElementById('burn-calorie');
             burn.textContent = burnCalorie;

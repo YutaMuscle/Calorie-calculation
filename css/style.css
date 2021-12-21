@@ -13,15 +13,13 @@ h2 {
 }
 
 .caveat {
-  background-color: yellow;
-  text-decoration: underline;
-  -webkit-text-decoration-color: black;
-          text-decoration-color: black;
-  -webkit-text-decoration-style: wavy;
-          text-decoration-style: wavy;
-  margin: 50px auto;
-  width: 40%;
   line-height: 1.5;
+  text-align: center;
+}
+
+.caveat span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(0%, #ffff00));
+  background: linear-gradient(transparent 60%, #ffff00 0%);
 }
 
 .gender-choice {
