@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Calorie calculation</h1>
+
+    <p class="caveat">※下記の入力フォームは半角数字の整数のみ入力可能です</p>
+
+    <div class="gender-choice">
+        <form name="genderForm">
+            <p>性別：</p>
+            <div>
+                <input class="gender-type" type="radio" name="gender"  value="men" checked>男性
+                <input class="gender-type" type="radio" name="gender" value="women">女性
+            </div>
+        </form>
+    </div>
+
+    <div class="input-box">
+        <p>年齢：</p>
+        <form>
+        <input id="age" type="text" placeholder="25" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" onblur="this.value=this.value.replace(/[^0-9]+/i,'')">
+        歳
+        </form>
+    </div>
+
+    <div class="input-box">
+        <p>身長：</p>
+        <form>
+        <input id="height" type="text" placeholder="163.5" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" onblur="this.value=this.value.replace(/[^0-9]+/i,'')">
+        cm
+        </form>
+    </div>
+    
+    <div class="input-box">
+        <p>体重：</p>
+        <form>
+        <input id="weight" type="text" placeholder="70" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" onblur="this.value=this.value.replace(/[^0-9]+/i,'')">
+        kg
+        </form>
+    </div>
+    
+    <h2>1日の活動量を選択してください</h2>
+
+    <div class="active-choice">
+        <form name="avtiveType">
+        <input type="radio" name="active" value="low" id="low" checked> 
+        <label for="low" class="label">
+            <p class="active-head">アクティブ度が低い人</p>
+            <p>座り仕事が多くほとんど運動習慣がない</p>
+        </label>              
+           
+        <input type="radio" name="active" value="normal" id="normal"> 
+        <label for="normal" class="label">
+            <p class="active-head">アクティブ度がまあまあ高い人</p>
+            <p>立ち仕事や重労働が多く、１日中動き回っている</p>
+            <p>※座り仕事だが、週に２回ほどジムに通っている人も含む</p>   
+       </label>
+                
+       <input type="radio" name="active" value="high" id="high"> 
+        <label for="high" class="label">
+            <p class="active-head">アクティブ度が高い人</p>
+            <p>立ち仕事や重労働が多く、トレーニング習慣がある人</p>
+            <p>※座り仕事だが、週に４～５回ほどジムに通っている人も含む</p>
+        </label>
+        </form>
+    </div>
+
+    <div class="container">
+        <button class="btn slide-bg"><span></span>calculation</button>
+    </div>
+    
+    <div class="output-box">
+        <p>あなたの１日の消費カロリー</p>
+        <div class="output">
+            <div class="output-text">
+                <p id="burn-calorie"></p>
+            </div>
+            <p>kcal</p>
+        </div>
+
+        <p class="diet-label">あなたがダイエットするための１日の摂取カロリー</p>
+        <div class="output">
+            <div class="output-text">
+                <p id="diet-calorie"></p>
+            </div>
+            <p>kcal</p>
+        </div>
+    </div>
+
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
