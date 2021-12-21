@@ -202,6 +202,7 @@ h2 {
 @media (max-width: 834px) {
   .label {
     max-width: 380px;
+    padding: 10px;
   }
 }
 
