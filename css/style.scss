@@ -24,6 +24,13 @@ h2 {
     }
 }
 
+@media (max-width: 458px) {
+    .caveat {
+        margin: 0 auto;
+        max-width: 260px;
+    }
+}
+
 .gender-choice {
     margin: 30px auto;
     display: flex;
@@ -119,6 +126,7 @@ h2 {
     & .active-head {
         font-size: 18px;
         font-weight: 550;
+        padding-bottom: 5px;
     }
 
     & P {
@@ -135,6 +143,7 @@ h2 {
 @media (max-width: 376px) {
     .label {
         margin: 10px 10%; 
+        padding: 10px;
     }
 }
 
@@ -197,7 +206,7 @@ h2 {
 
 .output {
     display: flex;
-    margin: 20px 43%;
+    margin: 10px 43% 50px;
     height: 50px;
     align-items: center;
 
