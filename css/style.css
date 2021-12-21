@@ -304,13 +304,13 @@ h2 {
 
 @media (max-width: 834px) {
   .output {
-    margin: 20px 35%;
+    margin: 10px 35% 50px;
   }
 }
 
 @media (max-width: 376px) {
   .output {
-    margin: 20px 20%;
+    margin: 10px 20% 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
